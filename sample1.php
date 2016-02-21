@@ -16,7 +16,11 @@ if (isset($_POST["sub1"])) {
 }
 ?>
 <?php
-echo "Current Directory:"; echo dirname(__FILE__);
+echo "<br>"
+echo "--------------------------------------------------"
+echo "<br>"
+echo "Current Directory: "; echo dirname(__FILE__);
+echo "<br>"
 echo "--------------------------------------------------"
 ?>
 <form method="POST" action="">
