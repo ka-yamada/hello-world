@@ -5,8 +5,6 @@
 </head>
 <body>
 <?php
-echo "Current Directory:"; echo dirname(__FILE__);
-echo "--------------------------------------------------"
 if (isset($_POST["sub1"])) {
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
@@ -16,6 +14,10 @@ if (isset($_POST["sub1"])) {
         default:  echo "エラー"; exit;
     }
 }
+?>
+<?php
+echo "Current Directory:"; echo dirname(__FILE__);
+echo "--------------------------------------------------"
 ?>
 <form method="POST" action="">
 <input type="submit" value="登録する" name="sub1">　
