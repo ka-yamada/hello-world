@@ -5,10 +5,8 @@
 </head>
 <body>
 <?php
-echo "Current Directory:" dirname(__FILE__);
-?>
---------------------------------------------------
-<?php
+echo "Current Directory: dirname(__FILE__)";
+echo "--------------------------------------------------"
 if (isset($_POST["sub1"])) {
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
