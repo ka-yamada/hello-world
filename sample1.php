@@ -16,12 +16,12 @@ if (isset($_POST["sub1"])) {
 }
 ?>
 <?php
-echo "<br>"
-echo "--------------------------------------------------"
-echo "<br>"
+echo "<br>";
+echo "--------------------------------------------------";
+echo "<br>";
 echo "Current Directory: "; echo dirname(__FILE__);
-echo "<br>"
-echo "--------------------------------------------------"
+echo "<br>";
+echo "--------------------------------------------------";
 ?>
 <form method="POST" action="">
 <input type="submit" value="登録する" name="sub1">　
