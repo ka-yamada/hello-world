@@ -5,6 +5,12 @@
 </head>
 <body>
 <?php
+ini_set("output_buffering", 0);
+echo "しばらくお待ちください";
+for ($i = 0; $i < 5; $i++) {
+    echo "→";
+    sleep(2);
+}
 if (isset($_POST["sub1"])) {
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
