@@ -17,6 +17,13 @@ if (isset($_POST["sub1"])) {
     }
     echo "<br>";
 
+    // ランダムで大吉、凶を表示させる
+    $num = rand(0, 1);
+    if ($num == 0) {
+        echo "今日の運勢は大吉です。";
+    } else {
+        echo "今日の運勢は吉です。";
+    }
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
         case "登録する": echo "登録処理"; break;
@@ -24,6 +31,14 @@ if (isset($_POST["sub1"])) {
         case "削除する": echo "削除処理"; break;
         default:  echo "エラー"; exit;
     }
+    if ($num == 0) {
+        echo "（大吉）";
+    } else {
+        echo "（凶）";
+    }
+
+    
+    
 }
 ?>
 <?php
