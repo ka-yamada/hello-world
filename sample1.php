@@ -8,12 +8,13 @@
 if (isset($_POST["sub1"])) {
 
     // クリック後に処理待ちする
-    ini_set("output_buffering", 0);
+//    ini_set("output_buffering", 0);
     echo "しばらくお待ちください";
     for ($i = 0; $i < 5; $i++) {
         echo "→";
         sleep(2);
     }
+    echo "<br>";
 
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
