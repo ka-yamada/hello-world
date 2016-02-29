@@ -9,6 +9,7 @@ if (isset($_POST["sub1"])) {
 
     // クリック後に処理待ちする
 //    ini_set("output_buffering", 0);
+    ncurses_clear(); 
     echo "しばらくお待ちください";
     for ($i = 0; $i < 5; $i++) {
         echo "→";
