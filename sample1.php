@@ -12,12 +12,14 @@ if (isset($_POST["sub1"])) {
 
     // 画面をクリア
 //    ncurses_clear(); 
+/*
     echo "しばらくお待ちください";
     for ($i = 0; $i < 5; $i++) {
         echo "→";
         sleep(2);
     }
     echo "<br>";
+*/
 
     // ランダムで大吉、凶を表示させる
     $num = rand(0, 1);
