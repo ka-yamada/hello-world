@@ -5,13 +5,16 @@
 </head>
 <body>
 <?php
-ini_set("output_buffering", 0);
-echo "しばらくお待ちください";
-for ($i = 0; $i < 5; $i++) {
-    echo "→";
-    sleep(2);
-}
 if (isset($_POST["sub1"])) {
+
+    // クリック後に処理待ちする
+    ini_set("output_buffering", 0);
+    echo "しばらくお待ちください";
+    for ($i = 0; $i < 5; $i++) {
+        echo "→";
+        sleep(2);
+    }
+
     $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
     switch ($kbn) {
         case "登録する": echo "登録処理"; break;
