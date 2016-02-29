@@ -7,7 +7,7 @@
 <?php
 if (isset($_POST["sub1"])) {
 
-    echo "現在時刻は;
+    echo "現在時刻は";
     echo date(" Y年m月d日 H時i分s(u)秒", time());
     echo "です";
     echo "<br>";
